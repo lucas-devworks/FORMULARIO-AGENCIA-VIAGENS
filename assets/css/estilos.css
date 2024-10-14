@@ -1,0 +1,310 @@
+/* estilos globais */
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+/* cabeçalho */
+.largura-limite {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 0 15px;
+}
+
+.logo {
+    color: #5d15d1;
+    font-size: 20px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+.logo img {
+    width: 30px;
+}
+
+/* conteúdo principal */
+.banner {
+    background-image: url('../img/bahia.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    padding: 30px 0;
+}
+
+.container-formulario {
+    background-color: #fff;
+    padding: 20px;
+}
+
+/*form cabeçalho*/
+.orcamento {
+    height: 25px;
+    background-color: #5d15d1;
+    font-size: 10px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+.orcamento img {
+    width: 17px;
+}
+/*form conteúdo*/
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 15px;
+}
+input, select {
+    height: 25px;
+    border: 1px solid silver;
+    border-radius: 3px;
+}
+
+/*dados em coluna*/
+.dados-coluna {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 15px;
+}
+.dados-coluna div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex-grow: 1;
+    justify-content: space-between;
+}
+
+.qw {
+    display: flex;
+    flex-direction: ;
+}
+/*marcadores-base*/
+.marcadores {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/*radios*/
+.radios {
+    display: flex;
+    justify-content: space-between;
+    max-width: 180px;
+}
+.radios div {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/*check*/
+.check {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 300px;
+}
+.check div {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+/*botão*/
+button {
+    padding: 6px 5px;
+    width: 150px;
+    background-color: #5d15d1;
+    color: #fff;
+    border: none;
+    font-size: 15px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+/* fim form //////////////*/
+
+/* conteúdo das imagens */
+.conteudo  {
+    background-color: #eaeaea;
+    padding: 15px 0;
+}
+
+.imagem-destaque {
+    max-width: 380px;
+    width: 100%;
+}
+.imagem-destaque img {
+    height: 100%;
+}
+
+.img-faixa {
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+    width: 100%;
+    margin: 20px 0;
+}
+
+/*faixa personalizada*/
+.img-faixa figure {
+    position: relative;
+}
+.img-faixa figcaption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #00000093;
+    width: 100%;
+    color: #fff;
+    font-size: 15px;
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+
+.quatro-imagens {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.quatro-imagens figure {
+    width: 100%;
+
+    height: 180px;
+}
+.quatro-imagens div {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+figure img {
+    width: 100%;
+    height: 100%;   
+}
+
+/* imagens em cards */
+.cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+    margin: 20px 0;
+}
+
+.cards figure {
+    width: 49%; 
+    height: 100%;
+}
+.cards figcaption {
+    background-color: #fff;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+
+/* rodapé */
+footer {
+    background-color: #5d15d1;
+}
+
+.contato {
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    padding: 15px 0;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+footer img {
+    width: 20px;
+}
+
+.contato li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 10px 0;
+    font-size: 13px;
+
+}
+.teste {    
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    /* imagens com faixa */
+    .imagem-destaque {
+        width: 100%;
+        max-width: 100%;
+    }
+    .img-faixa {
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .quatro-imagens {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .quatro-imagens div {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .quatro-imagens figure {
+        width: 100%;
+        height: 300px;
+    }
+    /* cards */
+    .cards {
+        flex-direction: column;
+    }
+    .cards figure {
+        width: 100%;
+    } 
+
+}
+
+/* smartphone */
+@media (max-width: 540px) {
+    .quatro-imagens figure {
+        
+    }   
+    
+    footer div {
+        margin: 0 auto;
+        width: 200px;
+    }
+    /*formulpario*/
+    .dados-coluna {
+        flex-direction: column;
+    }
+    .ida {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .radios {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .check {
+        flex-direction: column;
+        gap: 20px;
+    }
+    button {
+        width: 100%;
+    }
+
+}
